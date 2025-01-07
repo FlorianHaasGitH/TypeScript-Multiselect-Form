@@ -17,7 +17,7 @@ export function Select({ value, onChange, options }: SelectProps) {
       <span className={styles.value}>Value</span>
       <button className={styles["clear-btn"]}>&times;</button>
       <div className={styles.caret}></div>
-      <ul className={styles.options}>
+      <ul className={`${styles.option} ${styles.show}`}>
         {options.map((option) => (
           <li key={option.label} className={styles.option}>
             {option.label}
